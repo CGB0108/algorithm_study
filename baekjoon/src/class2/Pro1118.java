@@ -13,14 +13,12 @@ public class Pro1118 {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 
         int n = Integer.parseInt(br.readLine());
-        System.out.println(n);
         String[] array = new String[n];
 
         for (int i = 0; i < n; i++) {
             array[i] = br.readLine();
 
         }
-
         Arrays.sort(array, new Comparator<String>() {
 
             @Override
@@ -42,5 +40,6 @@ public class Pro1118 {
             }
         }
         System.out.println(sb);
+        br.close();
     }
 }
